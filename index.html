@@ -27,11 +27,12 @@ Select ONE Additional Feature to Add
     <form id="movie-form">
       <label>
         🎥 What is my favorite movie?
+        
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+          <option value="movie1">real steel</option>
+          <option value="moveie2">spiderman</option>
+          <option value="movie3">minecraft</option>
+          <option value="movie4">coraline</option>
         </select>
       </label>
       <button type="submit">Check Movie Answer</button>
@@ -41,19 +42,43 @@ Select ONE Additional Feature to Add
     <!-- Book Question -->
     <form id="book-form">
       <label>
-        📖 What is my favorite book?
+        📖 What is my favorite drink?
         <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+          <option class = "FOOOD" value="drink1">banana milkshake</option>
+          <option value="drink">mango juice</option>
+          <option value="drink2">chinola juice</option>
+          <option value="drink3">Sherly temple</option>
         </select>
       </label>
       <button type="submit">Check Book Answer</button>
     </form>
     <div id="book-result"></div>
+    <img id = "Cutecat" src = "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2eFBnx0wwcyGIS4PcXFYa2iHlrtnd03zOsYZL8NTk4BWZnzo8VKN17XUEl35qyC7Ld6O1K8bJGtcDD5ohoVLDDw">
+     <img src = "https://i.ytimg.com/vi/L05Y-2G5zKs/mqdefault.jpg">
+     <img src = "https://images.stockx.com/images/Nike-LeBron-14-Time-to-Shine-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1738193358">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+      $("#Cutecat").hide().slideDown(1000, function (){
+        $("#Cutecat-h1").slideDown(3000);
+      });
+      $("img").animate({
+        width: "310px",
+        margainleft: "30px",
+        borderWidth:"20px",
+      },
+       2500
+           );
+      
+      $("h1").animate(
+      {
+        marginLeft:"20px",
+        fontsize: "6em",
+      },
+        3000
+        );
+        
+        
+      
       //Movie Question jQuery Code
       $("#movie-form").on("submit", function (event) {
         event.preventDefault();
@@ -75,7 +100,7 @@ Select ONE Additional Feature to Add
         var $answer = $("#book-answer");
         var answer = $answer.val();
 
-        if (answer === "book1") {
+        if (answer === "drink") {
           $("#book-result").text("YESSSS!");
         } else {
           $("#book-result").text("Try Again!");

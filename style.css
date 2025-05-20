@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Exile&display=swap');
 #movie-result {
   background: rgb(244, 98, 181);
   border: 5px solid black;
@@ -5,6 +6,23 @@
   height: 160px;
   margin-top: 10px;
   margin-bottom: 20px;
+}
+#movie-form{
+  font: italic 20px fantasy;
+}
+
+.FOOOD{
+ font: italic 20px fantasy;
+}
+#movie-answer{
+  background: rgb(10,299,100)
+}
+#Cutecat{
+  width: 150px;
+  margain: 45px;
+}
+#book-answer{
+  font-family: Cursive;
 }
 
 #book-result {
@@ -19,4 +37,7 @@
 hr {
   height: 5px;
   background-color: black;
+}
+html{
+  font-family: "Exile", system-ui;
 }
